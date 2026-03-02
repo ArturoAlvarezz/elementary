@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementary | Username OSINT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ELEMENTARY</h1>
+            <p class="subtitle">Username Enumeration Tool</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="usernameInput" placeholder="username" autocomplete="off">
+            <button id="searchBtn" onclick="searchUsername()">BUSCAR</button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <span class="loading-text">ESCANEANDO...</span>
+        </div>
+
+        <div id="results" class="results hidden">
+            <!-- Results will be populated by JS -->
+        </div>
+
+        <footer>
+            <p>OSINT Tool | ARM64 Ready</p>
+        </footer>
+    </div>
+
+    <canvas id="matrix"></canvas>
+    <script src="app.js"></script>
+</body>
+</html>
